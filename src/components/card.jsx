@@ -1,6 +1,6 @@
 import './card.css';
 
-export default function Card({content}) {
+export default function Card({ content }) {
 	return (
 		<div>
 			<div class="center">
@@ -10,7 +10,7 @@ export default function Card({content}) {
 						<p class="subtitle">{content.subtitle}</p>
 					</div>
 
-					<img src={content.img} alt="img"/>
+					<img src={content.img} alt="img" />
 				</div>
 			</div>
 		</div>

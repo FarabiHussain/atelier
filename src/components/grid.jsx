@@ -1,4 +1,4 @@
-import {Container, Row, Col} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Card from './card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,7 +7,8 @@ export default function Grid(cards) {
 		<Container fluid>
 			<Row>
 				{
-					cards.list.map((card) => (
+					cards.list.map(
+						(card) => (
 							<Col><Card content={card} /></Col>
 						)
 					)
