@@ -3,12 +3,12 @@
 	height: 25vh;
 	align-items: center;
 	justify-content: center;
-	border:1px solid red;
+	/* border:1px solid red; */
 }
 
 .article-card {
-	width: 350px;
-	height: 220px;
+	width: 500px;
+	height: 270px;
 	border-radius: 5px;
 	overflow: hidden;
 	position: relative;
@@ -20,7 +20,7 @@
 }
 
 .article-card:hover {
-	transform: translateY(-2px);
+	transform: translateY(-5px);
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 

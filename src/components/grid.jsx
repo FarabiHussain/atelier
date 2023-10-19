@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Grid(cards) {
 	return (
 		<Container fluid>
-			<Row>
+			<Row xs={1} md={4}>
 				{
 					cards.list.map(
 						(card) => (

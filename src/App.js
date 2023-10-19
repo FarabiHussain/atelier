@@ -23,6 +23,7 @@ export default function App() {
 						{ title: "card02", subtitle: "02.jpg", img: img02 },
 						{ title: "card03", subtitle: "03.jpg", img: img03 },
 						{ title: "card04", subtitle: "04.jpg", img: img04 },
+						{ },
 					]
 				} />
 			</body>
