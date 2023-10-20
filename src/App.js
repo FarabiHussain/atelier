@@ -1,11 +1,15 @@
 import './App.css';
 
+// components
 import TopBar from './components/top.bar';
 import Grid from './components/grid';
-import img01 from './assets/01.jpg'
-import img02 from './assets/02.jpg'
-import img03 from './assets/03.jpg'
-import img04 from './assets/04.jpg'
+
+// images from assets folder
+import hercules_prototype from './assets/hercules_prototype.webp';
+import kyubi_myers from './assets/kyubi_myers.webp';
+import liberty_yorinobu from './assets/liberty_yorinobu.webp';
+import malorian from './assets/malorian.webp';
+import nekomata_default from './assets/nekomata_default.webp';
 
 export default function App() {
 	return (
@@ -13,17 +17,22 @@ export default function App() {
 			<header>
 				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"></link>
-				<TopBar title="Atelier" />
+
+				{/* top bar component */}
+				<TopBar title="[Arme Atelier]" />
 			</header>
 
 			<body className='app-page'>
+
+				{/* grid component, list of dicts as parameter */}
 				<Grid list={
 					[
-						{ title: "card01", subtitle: "01.jpg", img: img01 },
-						{ title: "card02", subtitle: "02.jpg", img: img02 },
-						{ title: "card03", subtitle: "03.jpg", img: img03 },
-						{ title: "card04", subtitle: "04.jpg", img: img04 },
-						{ },
+						{ title: "Hercules Prototype", class: "Smart Assault Rifle", img: hercules_prototype },
+						{ title: "Hawk (Myers' Kyubi)", class: "Power Assault Rifle", img: kyubi_myers },
+						{ title: "Kongou (Yorinobu's Liberty)", class: "Power Pistol", img: liberty_yorinobu },
+						{ title: "Silverhand's Malorian", class: "Power Pistol", img: malorian },
+						{ title: "Nekomata", class: "Tech Sniper Rifle", img: nekomata_default },
+						{},
 					]
 				} />
 			</body>
