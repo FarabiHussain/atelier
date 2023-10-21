@@ -1,7 +1,6 @@
 import './App.css';
 
 // components
-import TopBar from './components/top.bar';
 import Grid from './components/grid';
 
 // images from assets folder
@@ -13,29 +12,27 @@ import nekomata_default from './assets/nekomata_default.webp';
 
 export default function App() {
 	return (
-		<div className='app-page'>
-			<header>
-				<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
-				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"></link>
+		<div className='app-container'>
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"></link>
 
-				{/* top bar component */}
-				<TopBar title="[Arme Atelier]" />
-			</header>
+			{/* animated 'noise' background */}
+			<div className="noise"></div>
 
-			<body className='app-page'>
-
-				{/* grid component, list of dicts as parameter */}
-				<Grid list={
-					[
-						{ title: "Hercules Prototype", class: "Smart Assault Rifle", img: hercules_prototype },
-						{ title: "Hawk (Myers' Kyubi)", class: "Power Assault Rifle", img: kyubi_myers },
-						{ title: "Kongou (Yorinobu's Liberty)", class: "Power Pistol", img: liberty_yorinobu },
-						{ title: "Silverhand's Malorian", class: "Power Pistol", img: malorian },
-						{ title: "Nekomata", class: "Tech Sniper Rifle", img: nekomata_default },
-						{},
-					]
-				} />
-			</body>
+			{/* grid component, list of dicts as parameter */}
+			<Grid list={
+				[
+					{ title: "Hercules Prototype", class: "Smart Assault Rifle", img: hercules_prototype },
+					{ title: "Hawk (Myers' Kyubi)", class: "Power Assault Rifle", img: kyubi_myers },
+					{},
+					{ title: "Kongou (Yorinobu's Liberty)", class: "Power Pistol", img: liberty_yorinobu },
+					{ title: "Silverhand's Malorian", class: "Power Pistol", img: malorian },
+					{},
+					{ title: "Nekomata", class: "Tech Sniper Rifle", img: nekomata_default },
+					{},
+					{},
+				]
+			} />
 		</div>
 	);
 }
