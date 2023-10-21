@@ -1,24 +1,21 @@
-import './card.css';
-import item_background from './../assets/item_background.webp'
-import connection_error_background from './../assets/connection_error_background.webp'
-import connection_error from './../assets/connection_error.webp'
+import {populate_attributes, populate_images} from './card_helper';
 
 export default function Card({ content }) {
+	let card_images = populate_images(content.img);
+	let card_attributes = populate_attributes(content.img);
+
 	return (
 		<div>
 			<div class="center">
-				<div class="item-card">
+				<div className={card_attributes.join(" ")} draggable="false">
+					{card_images[0]};
+					{card_images[1]};
+					{card_images[2]};
+					{card_images[3]};
 
-					{/* display item background, or error background if no img was provided */}
-					<img src={content.img ? item_background : connection_error_background} alt="img" />
-
-					{/* display item icon, or error text if no img was provided */}
-					<img src={content.img ? content.img : connection_error} alt="img" />
-
-					{/* display the `title` and `class` of item */}
-					<div class="content">
-						<p class="title">{content.title ? content.title : ""}</p>
-						<p class="class">{content.class ? content.class : ""}</p>
+					<div className="content unselectable">
+						<p className="title">{content.title ? content.title : ""}</p>
+						<p className="class">{content.class ? content.class : ""}</p>
 					</div>
 				</div>
 			</div>
