@@ -1,11 +1,10 @@
-# A demo of my progress with ReactJS. Aesthetics inspired by CDPR's Cyberpunk 2077.
+### A demo of my progress with ReactJS
+Aesthetics inspired by CDPR's Cyberpunk 2077.
 
-In the project directory, you can run:
+### Asset sources:
+1.  Bootstrap: [w3school.com](https://www.w3schools.com/w3css/)
+2. Weapon Icons: [cyberpunk.fandom.com](https://cyberpunk.fandom.com/wiki/Category:Cyberpunk_2077_images_-_Weapon_Inventory_Icons) 
+3.  Card Design: [Josh Werner](https://codepen.io/jshwrnr/pen/BaRwBZM)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Running the project
+In the project directory, run `npm start` in the terminal.
