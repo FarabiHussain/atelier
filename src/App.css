@@ -1,28 +1,34 @@
-.app-page {
+.app-container {
 	text-align: center;
-	background-color: #01012B;
+	background-color: #111111;
 	min-height: 100vh;
-	font-family: 'Orbitron', sans-serif;
+	color: #eeeeee;
+	overscroll-behavior: none;
 }
 
-.top-menu {
-	max-width: 95%;
-	margin: auto;
-	color: #FF2A6D;
-	background-color: #01012B;
+.noise {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	width: 200%;
+	height: 200vh;
+	background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+	background-repeat: repeat;
+	animation: bg-animation 0.2s infinite;
 }
 
-.card {
-	width: 20%;
-	height: 200px;
-	border-radius: 2mm;
-	margin: 15px;
-	vertical-align: baseline;
-	/* background-color: #D1F7FF; */
-	/* background-color: #005678; */
-	background-color: #05D9E8;
-}
-
-.w3-bar-block .w3-bar-item {
-	padding: 20px
+@keyframes bg-animation {
+	0% { transform: translate(0,0) }
+	10% { transform: translate(-5%,-5%) }
+	20% { transform: translate(-10%,5%) }
+	30% { transform: translate(5%,-10%) }
+	40% { transform: translate(-5%,15%) }
+	50% { transform: translate(-10%,5%) }
+	60% { transform: translate(15%,0) }
+	70% { transform: translate(0,10%) }
+	80% { transform: translate(-15%,0) }
+	90% { transform: translate(10%,5%) }
+	100% { transform: translate(5%,0) }
 }
