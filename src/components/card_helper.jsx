@@ -1,7 +1,7 @@
 import './card.css';
-import item_background from './../assets/item_background.webp'
-import connection_error_background from './../assets/connection_error_background.webp'
-import connection_error_text from './../assets/connection_error.webp'
+import item_background from './../assets/item_background.png'
+import connection_error_background from './../assets/connection_error_background.png'
+import connection_error_text from './../assets/connection_error.png'
 
 // return a list of 4 images based on whether `content_img` exists 
 // 4 images were needed to achieve the glitch effect in the `unclickable` 

@@ -4,11 +4,11 @@ import './App.css';
 import Grid from './components/grid';
 
 // images from assets folder
-import hercules_prototype from './assets/hercules_prototype.webp';
-import kyubi_myers from './assets/kyubi_myers.webp';
-import liberty_yorinobu from './assets/liberty_yorinobu.webp';
-import malorian from './assets/malorian.webp';
-import nekomata_default from './assets/nekomata_default.webp';
+import hercules_prototype from './assets/hercules_prototype.png';
+import kyubi_myers from './assets/kyubi_myers.png';
+import liberty_yorinobu from './assets/liberty_yorinobu.png';
+import malorian from './assets/malorian.png';
+import nekomata_default from './assets/nekomata_default.png';
 
 export default function App() {
 	return (
